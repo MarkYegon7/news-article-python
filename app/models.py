@@ -10,7 +10,7 @@ class Article:
         
 
         
-class web:
+class Source:
     def __init__(self,id,name,description,url,language):
         self.id = id
         self.name = name
