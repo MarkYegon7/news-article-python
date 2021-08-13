@@ -1,7 +1,7 @@
 <!-- <h1>my display{{message}}</h1> -->
 {% extends 'base.html'%} {% block content %}
 <div class="main">
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
 
             <div class="col-3">
@@ -12,10 +12,11 @@
                     <div class="list-group list-group-flush scrolly">
                         <ul>
                             {% for source in sources %}
-                            <a href="/article/{{source.id}}">
+                            <a class=" btn btn-outline-primary " href="/article/{{source.id}}">
                                 <p class="text-capitalize text-muted">{{source.id}}</p>
                             </a>
-                            {% endfor %}
+
+                            <hr> {% endfor %}
                         </ul>
                     </div>
 
